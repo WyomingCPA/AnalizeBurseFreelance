@@ -3,7 +3,6 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 
-
 from .models import FreelanceAds, FreelanceAdsHide, FreelanceAdsOverdue
 
 from datetime import datetime, timedelta
@@ -18,7 +17,6 @@ def read_advert(request):
     delta = datetime.now() - timedelta(hours=5)
     list_ads = list_ads.filter(time_parsing__gte=delta).exclude(id__in=oeverdue_ads)
      
-
     paginator = Paginator(list_ads, 50)
     page = request.GET.get('page')
     try:
