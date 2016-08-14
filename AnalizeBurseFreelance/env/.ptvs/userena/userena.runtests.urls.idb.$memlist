@@ -1,0 +1,7 @@
+static
+admin
+urlpatterns
+url
+staticfiles_urlpatterns
+include
+settings

@@ -1,0 +1,5 @@
+UserenaAuthenticationBackendTests
+User
+UserenaAuthenticationBackend
+TestCase
+get_user_model

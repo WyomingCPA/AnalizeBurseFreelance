@@ -1,0 +1,98 @@
+﻿<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css">
+  </head><body>
+    <div class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><span>Brand</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+                <p>{{ count_today_hidden }}</p>
+            </li>
+            <li class="active">
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-14">
+
+          <form method="post" action="{% url "FreelanceAds.views.action_advert" %}">
+           {% csrf_token %} 
+            <table class="table">
+              <thead>
+                <tr>
+                  <th><input type="checkbox" id="selectAll"></th>
+                  <th>Title</th>
+                  <th>Link</th>
+                  <th>Site</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for item in list_ads %}
+                <tr>
+                     <td>
+                         <input type="checkbox" name="pointer_user[]" value="{{item.id}}">
+                     </td>
+                     <td>{{ item.title }}</td>
+                     <td><a href="{{ item.link }}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" target="_blank">Открыть</a></td>
+                     <td>{{ item.site }}</td>   
+                </tr>
+                 {% endfor %}   
+              </tbody>
+            </table>
+              <button class="btn btn-primary" type="submit">Скрыть</button>
+           </form>
+           <div class="pagination">
+               <span class="step-links">
+                   {% if list_ads.has_previous %}
+                       <a href="?page={{ list_ads.previous_page_number }}">previous</a>
+                   {% endif %}
+
+                   <span class="current">
+                       Page {{ list_ads.number }} of {{ list_ads.paginator.num_pages }}.
+                   </span>
+
+                   {% if list_ads.has_next %}
+                       <a href="?page={{ list_ads.next_page_number }}">next</a>
+                   {% endif %}
+               </span>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+        $('#selectAll').click(function (e) {
+            if ($(this).hasClass('checkedAll')) {
+                $('input').prop('checked', false);
+                $(this).removeClass('checkedAll');
+            } else {
+                $('input').prop('checked', true);
+                $(this).addClass('checkedAll');
+            }
+        });
+    </script>
+   </body>
+</html>

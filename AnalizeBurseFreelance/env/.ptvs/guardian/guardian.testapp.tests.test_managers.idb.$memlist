@@ -1,0 +1,6 @@
+UserObjectPermissionManager
+GroupObjectPermissionManager
+TestManagers
+unicode_literals
+TestCase
+mock

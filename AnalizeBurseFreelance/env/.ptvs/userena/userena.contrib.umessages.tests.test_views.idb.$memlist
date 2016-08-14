@@ -1,0 +1,8 @@
+MessageRecipient
+User
+MessagesViewsTests
+TestCase
+Message
+get_user_model
+reverse
+ComposeForm

@@ -1,0 +1,11 @@
+handler500
+handler404
+View
+unicode_literals
+admin
+urlpatterns
+PermissionRequiredMixin
+url
+login
+TestClassRedirectView
+include

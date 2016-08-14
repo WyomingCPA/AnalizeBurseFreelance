@@ -1,0 +1,16 @@
+unicode_literals
+get_model_name
+clean_orphan_obj_perms
+django_apps
+get_user_model
+user_module_name
+ContentType
+OrphanedObjectPermissionsTest
+User
+assign_perm
+auth_app
+create_permissions
+call_command
+TestCase
+Group
+skipUnlessTestApp

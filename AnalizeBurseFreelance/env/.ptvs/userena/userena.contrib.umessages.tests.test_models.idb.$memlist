@@ -1,0 +1,10 @@
+MessageRecipient
+User
+MessageModelTests
+MessageContact
+MessageRecipientModelTest
+Message
+get_user_model
+truncate_words
+TestCase
+MessageContactTests

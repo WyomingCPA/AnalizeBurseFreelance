@@ -1,0 +1,6 @@
+GuardianError
+ObjectNotPersisted
+unicode_literals
+WrongAppError
+MixedContentTypeError
+NotUserNorGroup

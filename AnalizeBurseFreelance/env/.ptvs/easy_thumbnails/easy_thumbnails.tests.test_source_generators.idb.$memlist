@@ -1,0 +1,12 @@
+EXIF_REFERENCE
+source_generators
+base64
+BytesIO
+EXIF_ORIENTATION
+image_from_b64
+six
+PilImageTest
+ImageChops
+near_identical
+Image
+test

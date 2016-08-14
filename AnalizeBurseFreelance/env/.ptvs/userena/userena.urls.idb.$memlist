@@ -1,0 +1,8 @@
+url
+auth_views_compat_quirks
+userena_views
+merged_dict
+urlpatterns
+auth_views
+password_reset_uid_kwarg
+userena_settings

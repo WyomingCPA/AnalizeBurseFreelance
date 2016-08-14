@@ -1,0 +1,9 @@
+MessageRecipient
+User
+MessageContactManagerTest
+MessageContact
+MessageRecipientManagerTest
+Message
+get_user_model
+TestCase
+MessageManagerTests

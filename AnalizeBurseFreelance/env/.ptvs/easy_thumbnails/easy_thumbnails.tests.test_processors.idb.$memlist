@@ -1,0 +1,10 @@
+ImageDraw
+ScaleAndCropTest
+ImageChops
+TestCase
+processors
+AutocropTest
+create_image
+BackgroundTest
+Image
+ColorspaceTest

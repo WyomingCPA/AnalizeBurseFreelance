@@ -1,0 +1,12 @@
+AuthenticationFormTests
+EditAccountFormTest
+SignupFormOnlyEmailTests
+ChangeEmailFormTests
+TestCase
+override
+_
+userena_settings
+get_user_model
+SignupFormTests
+unicode_literals
+forms

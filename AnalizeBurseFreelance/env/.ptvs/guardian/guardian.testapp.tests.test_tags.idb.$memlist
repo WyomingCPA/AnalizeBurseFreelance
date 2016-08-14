@@ -1,0 +1,16 @@
+unicode_literals
+get_user_model
+ContentType
+settings
+GetObjPermsTagTest
+GroupObjectPermission
+User
+UserObjectPermission
+Template
+Context
+render
+TestCase
+NotUserNorGroup
+Group
+AnonymousUser
+TemplateSyntaxError

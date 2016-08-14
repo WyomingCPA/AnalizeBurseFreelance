@@ -1,0 +1,6 @@
+BaseObjectPermissionsFormTests
+get_user_model
+unicode_literals
+TestCase
+BaseObjectPermissionsForm
+ContentType

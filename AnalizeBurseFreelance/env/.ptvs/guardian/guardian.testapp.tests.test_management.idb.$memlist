@@ -1,0 +1,9 @@
+get_anonymous_user
+absolute_import
+unicode_literals
+unittest
+mocked_get_init_anon
+get_user_model
+TestGetAnonymousUser
+mock
+create_anonymous_user

@@ -1,0 +1,7 @@
+assign_perm
+remove_perm
+ContentType
+unicode_literals
+get_user_model
+TestCase
+CustomPKModelTest
